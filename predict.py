@@ -6,7 +6,7 @@ from nabirds.data_loader import load_data
 from nabirds.model import create_model
 import cv2
 
-model = tf.keras.model.load_model('final_model.keras')
+model = tf.keras.models.load_model('final_model.keras')
 
 def predict_image(image_path):
     img = cv2.imread(image_path)
